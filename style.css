@@ -11,6 +11,7 @@ header {
     background-color: white;
     height: 70px;
     padding: 10px;
+    border-radius: 20px;
 }
 
 .home-container {
@@ -40,7 +41,6 @@ header {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 ul {
@@ -58,4 +58,6 @@ section {
     align-items: center;
     height: 100vh;
     border-radius: 20px;
+    padding: 40px;
 }
+
