@@ -73,20 +73,23 @@ nav ul li a:hover {
     background: linear-gradient(rgb(255, 234, 0), rgb(255, 123, 0));
     color: white;
     border-radius: 20px;
-    margin: 50px auto;
+    margin: 40px;
     justify-content: center;
     align-items: center;
-    padding: 40px;
-    max-width: 900px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .inicio-text {
+    margin: 30px;
     text-align: justify;
-    padding: 20px;
+    padding: 30px;
     font-size: 18px;
     line-height: 1.6;
-    max-width: 500px;
+}
+
+.inicio-img {
+    border-radius: 20px;
+    
 }
 
 /* Ajuste para pantallas pequeñas */
@@ -101,11 +104,12 @@ nav ul li a:hover {
         max-width: 100%;
         padding: 15px;
         font-size: 16px;
+        justify-items: center;
     }
 
     .inicio-img {
         width: 100%;
-        height: auto;
+        height: 90%;
         max-width: 300px;
     }
 }
