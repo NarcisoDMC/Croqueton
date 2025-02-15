@@ -102,6 +102,10 @@ nav ul li a:hover {
         font-size: 14px;
     }
 
+    .logo-img {
+        height: 40px;
+    }
+
     .section-inicio {
         flex-direction: column;
         text-align: center;
