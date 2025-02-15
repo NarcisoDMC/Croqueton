@@ -5,7 +5,7 @@ body{
     background-color: antiquewhite;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@ header {
     height: 80px;
     padding: 0 20px;
     border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: black;
 }
 
 nav {
@@ -22,23 +22,11 @@ nav {
     width: 100%;
 }
 
-.home-container{
-    color: orange;
-    font-size: 35px;
-    margin-right: 20px;
-
-    transition: color 0.2s;
-}
-
-.home-container:hover{
-    color: rgb(255, 230, 0);
-}
-
 nav ul {
     list-style: none;
     display: flex;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0;
     margin: 0;
 }
@@ -59,12 +47,12 @@ nav ul li a:hover {
     color: orange;
 }
 
-.logo-container {
+.header-container {
     display: flex;
     align-items: center;
 }
 
-.logo-container a {
+.header-container a {
     padding: 10px;
     text-decoration: none;
     color: rgb(165, 158, 125);
@@ -72,47 +60,43 @@ nav ul li a:hover {
     transition: color 0.3s ease-in-out;
 }
 
-.logo-container a:hover {
+.header-container a:hover {
     color: orange;
 }
 
-.logo-img {
+.logo-header {
     height: 60px;
-    border-radius: 50%;
+    border-radius: 50px;
 }
 
-.facebook-container,
-.Phone-container {
-    background: linear-gradient(rgb(255, 234, 0), rgb(255, 123, 0));
-    border-radius: 20px;
-    margin: 30px auto; /* Centra ambas secciones */
-    padding: 25px;
-    width: 300px; /* Tamaño uniforme */
+.logo-container {
     display: flex;
-    flex-direction: column; /*Distribucion tipo columna*/
-    align-items: center;
-    text-align: center; /* Mejor alineación */
-    color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    background: linear-gradient(rgb(255, 234, 0), rgb(255, 123, 0));
+    padding: 20px; 
+    margin: 30px auto;
+    width: max-content;
+    border-radius: 20px;
 }
 
-.facebook-header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
+.logo-principal {
+    max-width: 100%;  /* La imagen nunca será más grande que su contenedor */
+    height: auto;  /* Mantiene la proporción original */
+    border-radius: 20px;
+    display: block;  /* Elimina espacios extra */
+    margin: 0 auto;  /* Centra la imagen */
+    object-fit: contain;
 }
 
-.phone-container h2 {
-    font-size: 18px;
-    font-weight: bold;
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    .logo-principal {
+        height: 300px; /* Reduce el tamaño en tablets */
+    }
 }
 
-/* Diseño responsivo */
 @media screen and (max-width: 480px) {
-    .facebook-container,
-    .phone-container {
-        width: 90%; /* Ajuste para móviles */
-        padding: 20px;
+    .logo-principal {
+        height: 200px; /* Reduce el tamaño en celulares */
     }
 }

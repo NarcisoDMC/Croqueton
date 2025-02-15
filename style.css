@@ -68,24 +68,44 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 
-.section-inicio{
+.section-inicio {
     display: flex;
     background: linear-gradient(rgb(255, 234, 0), rgb(255, 123, 0));
     color: white;
     border-radius: 20px;
-    margin: 50px;
+    margin: 50px auto;
     justify-content: center;
     align-items: center;
-    height: fit-content
+    padding: 40px;
+    max-width: 900px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.inicio-text{
+.inicio-text {
     text-align: justify;
-    padding: 30px;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
 }
 
-.inicio-img {
-    margin: 0;
-    width: 270px;
-    height: 350px;
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .section-inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .inicio-text {
+        max-width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .inicio-img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
 }
