@@ -97,19 +97,27 @@ nav ul li a:hover {
     .section-inicio {
         flex-direction: column;
         text-align: center;
-        height: 600px;
+        align-items: center; /* Centra los elementos */
+        padding: 20px;
+        height: auto; /* Altura flexible */
+        margin: 30px auto; /* Agrega margen para que no ocupe toda la pantalla */
+        width: 90%; /* Ajusta el ancho */
+        max-width: 600px; /* Evita que sea demasiado grande */
+        border-radius: 15px; /* Mantiene el diseño con bordes redondeados */
     }
 
     .inicio-text {
         max-width: 100%;
-        padding: 15px;
-        font-size: 13px;
-        justify-items: center;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: justify; /* Mejora la legibilidad */
+        padding: 10px;
     }
 
     .inicio-img {
-        width: 40%;
-        height: 45%;
-        max-width: 300px;
+        width: 70%; /* Ajuste dinámico */
+        max-width: 250px; /* Mantiene proporción adecuada */
+        height: auto; /* Permite que la imagen se ajuste sin deformarse */
+        margin-top: 15px; /* Separa del texto */
     }
 }
