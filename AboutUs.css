@@ -118,3 +118,22 @@ nav ul li a:hover {
     color: orange;
     background: transparent;
 }
+
+/* Ajustes responsivos */
+@media screen and (max-width: 768px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .home-container {
+        font-size: 25px;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .logo-principal {
+        height: 300px; /* Reduce el tamaño en tablets */
+    }
+}

@@ -94,6 +94,14 @@ nav ul li a:hover {
 
 /* Ajuste para pantallas pequeñas */
 @media screen and (max-width: 768px) {
+    nav ul li a{
+        font-size: 14px;
+    }
+
+    .logo-container a{
+        font-size: 14px;
+    }
+
     .section-inicio {
         flex-direction: column;
         text-align: center;
@@ -101,7 +109,7 @@ nav ul li a:hover {
         padding: 20px;
         height: auto; /* Altura flexible */
         margin: 30px auto; /* Agrega margen para que no ocupe toda la pantalla */
-        width: 90%; /* Ajusta el ancho */
+        width: 60%; /* Ajusta el ancho */
         max-width: 600px; /* Evita que sea demasiado grande */
         border-radius: 15px; /* Mantiene el diseño con bordes redondeados */
     }

@@ -92,12 +92,36 @@ nav ul li a:hover {
 
 /* Ajustes responsivos */
 @media screen and (max-width: 768px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .header-container a {
+        font-size: 14px;
+    }
+
+    .logo-header {
+        height: 40px;
+    }
+
     .logo-principal {
         height: 300px; /* Reduce el tamaño en tablets */
     }
 }
 
 @media screen and (max-width: 480px) {
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .header-container a {
+        font-size: 14px;
+    }
+
+    .logo-header {
+        height: 40px;
+    }
+
     .logo-principal {
         height: 200px; /* Reduce el tamaño en celulares */
     }
