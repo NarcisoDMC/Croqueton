@@ -74,34 +74,6 @@ nav ul {
     transform: scale(1.2);
 }
 
-.logo-container {
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(rgb(255, 234, 0), rgb(255, 123, 0));
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px; 
-    margin: 30px auto;
-    width: max-content;
-    border-radius: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.logo-container a{
-    color: white;
-    font-weight: bold;
-}
-
-.logo-principal {
-    max-width: 100%;  /* La imagen nunca será más grande que su contenedor */
-    height: auto;  /* Mantiene la proporción original */
-    border-radius: 20px;
-    display: block;  /* Elimina espacios extra */
-    margin: 0 auto;  /* Centra la imagen */
-    object-fit: contain;
-}
-
 /* Ajustes responsivos */
 @media screen and (max-width: 768px) {
     nav ul li a {
@@ -122,23 +94,5 @@ nav ul {
 
     .logo-principal {
         height: 300px; /* Reduce el tamaño en tablets */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    nav ul li a {
-        font-size: 14px;
-    }
-
-    .header-container a {
-        font-size: 14px;
-    }
-
-    .logo-header {
-        height: 40px;
-    }
-
-    .logo-principal {
-        height: 200px; /* Reduce el tamaño en celulares */
     }
 }

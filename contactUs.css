@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', serif;
     background-color: antiquewhite;
 }
 
@@ -27,11 +27,15 @@ nav {
     font-size: 35px;
     margin-right: 20px;
 
-    transition: color 0.2s;
+    transition: color 0.2s, transform 0.1s ease-in-out;
 }
 
 .home-container:hover{
     color: rgb(255, 230, 0);
+}
+
+.home-container:active{
+    transform: scale(1.2);
 }
 
 nav ul {
@@ -79,6 +83,12 @@ nav ul li a:hover {
 .logo-img {
     height: 60px;
     border-radius: 50%;
+
+    transition: transform 0.1s ease-in-out;
+}
+
+.logo-img:active{
+    transform: scale(1.2);
 }
 
 .facebook-container,
@@ -121,7 +131,7 @@ nav ul li a:hover {
 /* Diseño responsivo */
 @media screen and (max-width: 768px) {
     .home-container {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     nav ul li a {
@@ -129,13 +139,13 @@ nav ul li a:hover {
     }
 
     .logo-img {
-        height: 40px;
+        height: 50px;
     }
 
     .facebook-container,
     .Phone-container,
     .Instagram-container {
-        width: 90%; /* Ajuste para móviles */
+        width: 80%; /* Ajuste para móviles */
         padding: 20px;
     }
 }

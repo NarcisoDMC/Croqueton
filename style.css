@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: 'Lato', serif;
     background-color: antiquewhite;
 }
 
@@ -11,7 +12,7 @@ header {
     align-items: center;
     background-color: white;
     height: 80px;
-    padding: 0 20px;
+    padding: 0 10px;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -66,6 +67,11 @@ nav ul li a:hover {
 .logo-img {
     height: 60px;
     border-radius: 50%;
+    transition: transform 0.1s ease-in-out;
+}
+
+.logo-img:active {
+    transform: scale(1.2);
 }
 
 .section-inicio {
@@ -80,16 +86,15 @@ nav ul li a:hover {
 }
 
 .inicio-text {
-    margin: 30px;
+    margin: 20px;
     text-align: justify;
-    padding: 30px;
+    padding: 20px;
     font-size: 18px;
     line-height: 1.6;
 }
 
 .inicio-img {
     border-radius: 20px;
-    
 }
 
 /* Ajuste para pantallas pequeñas */
@@ -99,11 +104,11 @@ nav ul li a:hover {
     }
 
     .logo-container a{
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .logo-img {
-        height: 40px;
+        height: 50px;
     }
 
     .section-inicio {
@@ -112,24 +117,32 @@ nav ul li a:hover {
         align-items: center; /* Centra los elementos */
         padding: 20px;
         height: auto; /* Altura flexible */
-        margin: 30px auto; /* Agrega margen para que no ocupe toda la pantalla */
+        margin: 20px auto; /* Agrega margen para que no ocupe toda la pantalla */
         width: 60%; /* Ajusta el ancho */
         max-width: 600px; /* Evita que sea demasiado grande */
+        max-height: 730px;
         border-radius: 15px; /* Mantiene el diseño con bordes redondeados */
     }
 
     .inicio-text {
         max-width: 100%;
-        font-size: 14px;
+        font-size: 15px;
         line-height: 1.5;
         text-align: justify; /* Mejora la legibilidad */
-        padding: 10px;
+        padding: 2px;
+    }
+
+    .inicio-text h1{
+        text-align: center;
+    }
+    
+    .inicio-text h3{
+        text-align: center;
     }
 
     .inicio-img {
         width: 70%; /* Ajuste dinámico */
         max-width: 250px; /* Mantiene proporción adecuada */
         height: auto; /* Permite que la imagen se ajuste sin deformarse */
-        margin-top: 15px; /* Separa del texto */
     }
 }
